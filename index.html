@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>WebGL</title>
+    <script src="libs/three.js"></script>
+    <script src="libs/OrbitControls.js"></script>
+    <script src="libs/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#" id="rotate">Провернуть</a>
+    <div id="WebGL-output"></div>
+    <script src="js/main.js"></script>
+    <script>
+        let cube = new Cube();
+        $("#rotate").on('click', function(e) { e.preventDefault(); cube.rotate() });
+    </script>
+</body>
+</html>
